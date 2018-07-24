@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onStart"
+            android:text="Start"
+            android:textAllCaps="false" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:onClick="onStop"
+            android:text="Stop"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.iigo.library.ClockLoadingView
+            android:id="@+id/clv_loading1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"/>
+
+        <com.iigo.library.ClockLoadingView
+            android:layout_marginTop="80dp"
+            android:id="@+id/clv_loading2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:center_color="@color/yellow"
+            app:circle_color="@color/green"
+            app:hour_hand_color="@color/orange"
+            app:minute_hand_color="@color/red" />
+    </LinearLayout>
+</RelativeLayout>

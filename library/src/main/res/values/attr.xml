@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ClockLoadingView">
+        <attr name="circle_color" format="color"></attr>
+        <attr name="center_color" format="color"></attr>
+        <attr name="hour_hand_color" format="color"></attr>
+        <attr name="minute_hand_color" format="color"></attr>
+    </declare-styleable>
+</resources>
