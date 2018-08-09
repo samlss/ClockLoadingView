@@ -15,7 +15,6 @@ A clock loading view(一个时钟loading view).
 ![gif2](https://github.com/samlss/ClockLoadingView/blob/master/screenshots/screenshot2.gif)
 
 
-
 ## 中文
 
 ### 使用<br>
