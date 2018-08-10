@@ -48,6 +48,7 @@ public class ClockLoadingView extends View{
     private Paint minHandPaint;
 
     private ValueAnimator valueAnimator;
+    private long animatorPlayTime;
 
     private float centerX;
     private float centerY;
@@ -219,13 +220,15 @@ public class ClockLoadingView extends View{
     }
 
     public void start(){
-        if (valueAnimator != null){
+        if (valueAnimator != null && !valueAnimator.isRunning()){
+            valueAnimator.setCurrentPlayTime(animatorPlayTime);
             valueAnimator.start();
         }
     }
 
     public void stop(){
-        if (valueAnimator != null){
+        if (valueAnimator != null && valueAnimator.isRunning()){
+            animatorPlayTime = valueAnimator.getCurrentPlayTime();
             valueAnimator.cancel();
         }
     }
