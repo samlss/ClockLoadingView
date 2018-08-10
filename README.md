@@ -12,7 +12,7 @@ A clock loading view(一个时钟loading view).
 <br>
 
 ![gif1](https://github.com/samlss/ClockLoadingView/blob/master/screenshots/screenshot1.gif)
-![gif2](https://github.com/samlss/ClockLoadingView/blob/master/screenshots/screenshot2.gif)
+
 
 
 ## 中文
